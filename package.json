@@ -16,11 +16,12 @@
     "url": "https://github.com/ThompsonJonM/magnolia/issues"
   },
   "homepage": "https://github.com/ThompsonJonM/magnolia#readme",
-  "devDependencies": {},
-  "dependencies": {
-    "cypress": "^3.3.1",
-    "cypress-cucumber-preprocessor": "^1.11.2"
+  "devDependencies": {
+    "cypress": "^3.3.0",
+    "cypress-cucumber-preprocessor": "1.11.2",
+    "fsevents": "^1.2.9"
   },
+  "dependencies": {},
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
   }
