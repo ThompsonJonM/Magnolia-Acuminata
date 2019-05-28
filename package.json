@@ -4,7 +4,10 @@
   "description": "An automation testing repository using Cypress.io, Cypress-Cucumber, and ES6.",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run"
+    "test": "npx cypress run --browser chrome",
+    "test-headless": "npx cypress run",
+    "test-ui": "npx cypress open",
+    "test-docker": "./run.sh"
   },
   "repository": {
     "type": "git",
