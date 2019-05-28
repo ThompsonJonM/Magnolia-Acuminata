@@ -1,12 +1,15 @@
-import {Given, Then} from "cypress-cucumber-preprocessor/steps";
+import {
+  Given,
+  Then
+} from "cypress-cucumber-preprocessor/steps";
 
 const profileUrl = "http://www.jmarshthompson.com/"
 
 Given('we visit the profile page', () => {
-    cy.visit(profileUrl)
+  cy.visit(profileUrl)
 })
 
 Then('the profile page should open', () => {
-    cy.url()
+  cy.url()
     .should('eq', profileUrl)
 })

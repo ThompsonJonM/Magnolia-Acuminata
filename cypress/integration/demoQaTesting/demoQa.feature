@@ -17,7 +17,7 @@ Feature: Demo QA
     Then "<value>" should be highlighted
 
     Examples:
-      | value  |
+      | value |
       | Item 1 |
       | Item 3 |
       | Item 6 |
