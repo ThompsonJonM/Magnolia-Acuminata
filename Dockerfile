@@ -1,10 +1,10 @@
 FROM cypress/browsers:latest
 
-WORKDIR /usr/src/app/
+WORKDIR /usr/app/src
 
 COPY package.json .
 COPY package-lock.json .
-RUN npm install
+RUN npm install -f
 
 COPY . .
 
