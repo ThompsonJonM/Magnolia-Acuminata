@@ -33,7 +33,7 @@ When('we select "Interactions"', () => {
 Then('the "Interactions" page should load', () => {
   cy.url()
     .should('eq', demoQaUrl + 'category/interactions/')
-})
+});
 
 /**
  * Scenario Outline: Verify Selectable Elements are Highlighted on the "Selectable" Page
@@ -45,14 +45,14 @@ Given('we are viewing the "Selectable" page', () => {
 
   cy.url()
     .should('eq', demoQaUrl + 'selectable/')
-})
+});
 
 When('we select {string}', (value) => {
   cy.get('#selectable')
     .find('li')
     .contains(value)
     .click()
-})
+});
 
 Then('{string} should be highlighted', (value) => {
   cy.get('#selectable')
